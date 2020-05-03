@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>MBRK & CO. : Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }  
+  h5{
+    font-size: 24px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h6{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+  }
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .container-fluid-b {
+    padding: 20px;
+    background-color:#221f1f;
+    color: white;
+    font-size: 20px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: white;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: black !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black !important;
+    background-color: grey !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
+
+.nav-tabs {
+    text-align:center;
+}
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><strong>MBRK&Co.</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">WHO WE ARE</a></li>
+        <li><a href="#whatwedo">WHAT WE DO</a></li>
+        <li><a href="#sectors">SECTORS</a></li>
+        <li><a href="#careers">CAREERS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<hr>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Who we are</h2><br>
+      <h4>MBRK & Co, Chartered Accountants, founded by CA. Manakchand Kabra & CA. Kashish Rathi, two professionals showcasing the nice blend of experience and expertise.</h4>
+      <h4>MBRK & Co. has the “Expertise, Effectiveness & Efficiency”, which creates value and offers solutions, which meets the diverse requirements of clients.</h4>
+      <br>
+      <!-- <button type="button" class="btn btn-outline-dark">READ MORE</button> -->
+      <a href="D:\MBRK\practice2About.html" class="btn btn-outline-dark">Read more</a>
+      <!-- <br><button class="btn btn-default btn-lg">Get in Touch</button> -->
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="whatwedo" class="container-fluid-b text-center">
+  <h5>What we do</h5>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="active">
+        <a data-toggle="tab" href="#home">Foundation</a>
+    </li>
+    <li><a data-toggle="tab" href="#menu1">Value</a></li>
+    <li><a data-toggle="tab" href="#menu2">Services</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <br>
+      <p>To provide an entire range of services that Chartered Accountants can offer by creating a Value Addition for all our Clients in a dynamic environment in all the diverse fields of the Industries.</p>
+      <button type="button" class="btn btn-link">READ MORE</button>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <br>
+      <p>We believe that our profession is our faith and as we pursue our journey, we want to hold fast to the resilience of our culture that moulds us into fortunate, distinct and content individuals.</p>
+      <button type="button" class="btn btn-link">READ MORE</button>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <br>
+      <p>Our focus in any business relationship lies in implementing our core competencies - Audit & Assurance, Direct Taxation, Indirect Taxation, Company Law and Corporate Advisory Services. Customizing our services based on the clients requirements has been our key strength.</p>
+      <a href="D:\MBRK\services.html" class="btn btn-outline-dark">READ MORE</a>
+      <!-- <button type="button" class="btn btn-link">READ MORE</button> -->
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="sectors" class="container-fluid text-center bg-grey">
+  <h2>Sectors</h2><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <a href="D:\MBRK\sectors.html">
+      <img src="http://www.brahmayya.com/wp-content/uploads/2015/03/manufacturing-sector.png" alt="Manufacturing">
+      <h4>Manufacturing</h4>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="D:\MBRK\sectors.html">
+      <img src="http://www.brahmayya.com/wp-content/uploads/2015/03/service-sector.png" alt="Service Sector">
+      <h4>Service Sector</h4>
+    </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="D:\MBRK\sectors.html">
+      <img src="http://www.brahmayya.com/wp-content/uploads/2015/03/other-industries.png" alt="Others">
+      <h4>Others</h4>
+    </a>
+    </div>
+    </div>
+  </div>
+  <br>
+  
+
+  <div class="container-fluid-b text-center">
+  <h5>Partners</h5>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <a href="D:\MBRK\partners.html">
+        <h6> MR. MANAKCHAND KABRA <br><span>F.C.A., B.Com</span></h6>
+        </a>
+      </div>
+      <div class="item">
+        <a href="D:\MBRK\partners.html">
+        <h6>MR. KASHISH RATHI<br><span>A.C.A., B.Com</span></h6>
+        </a>
+      </div>
+    </div>
+<br>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="careers" class="container-fluid">
+  <div class="text-center">
+    <h2>Careers</h2>
+  </div>
+  <h4>
+    Over the years, we at MBRK & Co. have earned a reputation for excellence based on our experience in the field of chartered accountancy in India. We provide immense opportunities to employees across various industry verticals. With a rapidly growing client list, we are looking to hire some brightest minds to join our organization.
+  </h4>
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="name">NAME</label>
+        <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="email">EMAIL</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="mobile">MOBILE</label>
+        <input type="mobile" class="form-control" id="mb" placeholder="Enter Mobile No." name="mb">
+      </div>
+      <div class="form-group">
+            
+      </div>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid-b text-center">
+    <h5 class="text-center">CONTACT</h5>
+  <div class="row">
+    <div class="col-sm-5">
+        <h5>HEAD OFFICE</h5>
+      <p><span class="glyphicon glyphicon-map-marker"></span>
+        OFFICE NO. 405, SKYLINE EPITOME,<br>
+        NEAR VIDYAVIHAR RAILWAY STATION,<br>
+        &nbsp3 KMS FROM BANDRA KURLA COMPLEX,<br> 
+        &nbspVIDYAVIHAR (W), MUMBAI-400086<br>
+
+</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> mbrk.co@gmail.com</p>
+    </div>
+    <div class="col-sm-5">
+        <h5>BRANCH OFFICE</h5>
+        <p>
+            <span class="glyphicon glyphicon-map-marker"></span>
+            OFFICE NO.116, KRUSHI BAZAR,<br>
+            NEAR SAHARA DARWAJA,<br>
+            SURAT- 395002.
+
+        </p>
+
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
