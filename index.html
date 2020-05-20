@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
   body {
     font: 400 15px Lato, sans-serif;
@@ -23,13 +23,15 @@
     color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
+    text-align: left;
   }
   h4 {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
     margin-bottom: 10px;
+    text-align: justify;
   }  
   h5{
     font-size: 24px;
@@ -37,6 +39,7 @@
     color:white;
     font-weight: 600;
     margin-bottom: 30px;
+    text-align: left;
   }
   h6{
     font-size: 20px;
@@ -46,6 +49,42 @@
     margin-bottom: 30px;
 
   }
+  h7 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 10px;
+  } 
+  h8 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h9 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }  
+  h10 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 5px;
+  }
+  hr {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
   .jumbotron {
     background-color: #f4511e;
     color: #fff;
@@ -53,7 +92,8 @@
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding: 1px 20px;
+    margin-top: -5px;
   }
   .container-fluid-b {
     padding: 20px;
@@ -142,7 +182,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #F8F8F8;
+    background-color: white;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -162,6 +202,8 @@
   .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+    background-color: grey !important;
+
   }
   footer .glyphicon {
     font-size: 20px;
@@ -226,18 +268,25 @@
     }
   }
   </style>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" style="font-size: 30px;" href="#myPage"><strong>MBRK&Co.</strong></a>
+      <a class="navbar-brand" style="font-size: 30px; padding-top: 0px;" href="#myPage"><img src="logo_mbrk.jpg" height="50px" width="230px"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -245,27 +294,30 @@
         <li><a href="#whatwedo">WHAT WE DO</a></li>
         <li><a href="#sectors">SECTORS</a></li>
         <li><a href="#careers">CAREERS</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
+      <hr>
     </div>
   </div>
 </nav>
-<hr>
-
+<br>
+<br>
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>Who we are</h2><br>
-      <h4>MBRK & Co, Chartered Accountants, founded by CA. Manakchand Kabra & CA. Kashish Rathi, two professionals showcasing the nice blend of experience and expertise.</h4>
-      <h4>MBRK & Co. has the “Expertise, Effectiveness & Efficiency”, which creates value and offers solutions, which meets the diverse requirements of clients.</h4>
+      <h2>Who we are</h2>
+      <h4>MBRK & Co. Chartered Accountants, founded by CA. Manakchand Kabra & CA. Kashish Rathi, professionals showcasing the nice blend of experience and expertise.</h4>
+      <h4>MBRK & Co. has their “Expertise, Effectiveness & Efficiency”, which creates value and offers solutions, which meets the diverse requirements of clients.</h4>
       <br>
       <a href="about.html" class="btn btn-outline-dark">Read more</a>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="margin-top: 40px;">
       <span class="glyphicon glyphicon-signal logo"></span>
     </div>
   </div>
+  <br>
 </div>
 
 <!-- Container (Services Section) -->
@@ -284,7 +336,7 @@
     <div id="home" class="tab-pane fade in active">
       <br>
       <p>Our focus in any business relationship lies in implementing our core competencies - Audit & Assurance, Direct Taxation, Indirect Taxation, Company Law and Corporate Advisory Services. Customizing our services based on the clients requirements has been our key strength.</p>
-      <a href="services.html" class="btn btn-outline-dark">READ MORE</a>
+      <a href="services.html" class="btn btn-link">READ MORE</a>
 
     </div>
     <div id="menu1" class="tab-pane fade">
@@ -300,25 +352,28 @@
 </div>
 
 <!-- Container (Sectors Section) -->
-<div id="sectors" class="container-fluid text-center bg-grey">
+<div id="sectors" class="container-fluid text-center bg-white">
   <h2>Sectors</h2><br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <a href="sectors.html">
       <img src="http://www.brahmayya.com/wp-content/uploads/2015/03/manufacturing-sector.png" alt="Manufacturing">
-      <h4>Manufacturing</h4>
+      <br>
+      <h9>Manufacturing</h9>
       </a>
     </div>
     <div class="col-sm-4">
       <a href="sectors.html">
       <img src="http://www.brahmayya.com/wp-content/uploads/2015/03/service-sector.png" alt="Service Sector">
-      <h4>Service Sector</h4>
+      <br>
+      <h9>Service Sector</h9>
     </a>
     </div>
     <div class="col-sm-4">
       <a href="sectors.html">
       <img src="http://www.brahmayya.com/wp-content/uploads/2015/03/other-industries.png" alt="Others">
-      <h4>Others</h4>
+      <br>
+      <h9>Others</h9>
     </a>
     </div>
     </div>
@@ -338,13 +393,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <a href="partners.html">
-        <h6> MR. MANAKCHAND KABRA <br><span>F.C.A., B.Com</span></h6>
+        <a href="..\Mbrk&co\partners.html">
+        <h6> MR. MANAKCHAND KABRA <br><span>FCA, B.Com</span></h6>
         </a>
       </div>
       <div class="item">
-        <a href="partners.html">
-        <h6>MR. KASHISH RATHI<br><span>A.C.A., B.Com</span></h6>
+        <a href="..\Mbrk&co\partners.html">
+        <h6>MR. KASHISH RATHI<br><span>ACA, B.Com</span></h6>
         </a>
       </div>
     </div>
@@ -383,10 +438,8 @@
         <label for="mobile">MOBILE</label>
         <input type="mobile" class="form-control" id="mb" placeholder="Enter Mobile No." name="mb">
       </div>
-      <div class="form-group">
-            
-      </div>
-      </div>
+      
+  </div>
       <div class="text-center">
         <button type="button" class="btn btn-primary">Submit</button>
       </div>
@@ -394,34 +447,88 @@
   </div>
 </div>
 
+<div id="gallery" class="container-fluid">
+  <h2>PHOTO GALLERY</h2>
+  <div class="container my-4">
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1z" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="item active">
+          <img class="d-block w-100" src="office1.png" alt="First slide">
+        </div>
+        <!--/First slide-->
+        <!--Second slide-->
+        <div class="item">
+          <img class="d-block w-100" src="office2.png" alt="Second slide">
+        </div>
+        <!--/Second slide-->
+        <!--Third slide-->
+        <div class="item">
+          <img class="d-block w-100" src="office3.png" alt="Third slide">
+        </div>
+        <!--/Third slide-->
+        <div class="item">
+          <img class="d-block w-100" src="office4.png" alt="Third slide">
+        </div>
+        <div class="item">
+          <img class="d-block w-100" src="office5.png" alt="Third slide">
+        </div>
+      </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+  </div>
+</div>
+
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid-b text-center">
-    <h5 class="text-center">CONTACT</h5>
+    <h5>CONTACT</h5>
   <div class="row">
     <div class="col-sm-5">
-        <h5><u>HEAD OFFICE</u></h5>
-      <p><span class="glyphicon glyphicon-map-marker"></span>
+        <h8><u>HEAD OFFICE</u></h8>
+      <p style="font-size: 15px;"><span class="glyphicon glyphicon-map-marker"></span>
         OFFICE NO. 405, SKYLINE EPITOME,<br>
         NEAR VIDYAVIHAR RAILWAY STATION,<br>
-        &nbsp3 KMS FROM BANDRA KURLA COMPLEX,<br> 
         &nbspVIDYAVIHAR (W), MUMBAI-400086<br>
-
-</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> mbrk.co@gmail.com</p>
+      </p>
+      <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+      <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.co@gmail.com</p>
     </div>
     <div class="col-sm-5">
-        <h5><u>BRANCH OFFICE</u></h5>
-        <p>
+        <h8><u>BRANCH OFFICE</u></h8>
+        <p style="font-size: 15px;">
             <span class="glyphicon glyphicon-map-marker"></span>
             OFFICE NO.116, KRUSHI BAZAR,<br>
             NEAR SAHARA DARWAJA,<br>
             SURAT- 395002.
-
+          
         </p>
-        <p><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
-
-    </div>
+        <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+        <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.surat@gmail.com</p>
+        </div>
 </div>
 
 <footer class="container-fluid text-center">
