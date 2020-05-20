@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 1px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
   }
@@ -24,25 +24,34 @@
     margin-bottom: 30px;
   }
   h4 {
-    font-size: 19px;
+    font-size: 17px;
     line-height: 1.375em;
     color: #303030;
-    font-weight: 400;
+    font-weight: 550;
     margin-bottom: 10px;
+    text-align: justify;
+    padding-left: 10px;
   }  
   
   h3 {
     font-size: 30px;
     line-height: 42px;
     padding-bottom: 20px;
+    color: black;
 }
   h5{
     font-size: 24px;
     text-transform: uppercase;
     color:white;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
+  hr {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
   .jumbotron {
     background-color: #f4511e;
     color: #fff;
@@ -50,7 +59,8 @@
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding: 5px 20px;
+    margin-top: -5px;
   }
   .container-fluid-b {
     padding: 60px 50px;
@@ -138,7 +148,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #F8F8F8;
+    background-color: white;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -149,6 +159,7 @@
   }
   .navbar li a, .navbar .navbar-brand {
     color: black !important;
+    font-weight: 500;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: black !important;
@@ -157,6 +168,8 @@
   .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+    background-color: white !important;
+
   }
   footer .glyphicon {
     font-size: 20px;
@@ -222,14 +235,14 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" style="font-size: 30px;" href="index.html"><strong>MBRK&Co.</strong></a>
+      <a class="navbar-brand" style="font-size: 30px; padding-top: 0px;" href="index.html"><img src="logo_mbrk.jpg" height="50px" width="230px"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -237,44 +250,57 @@
         <li><a href="index.html">WHAT WE DO</a></li>
         <li><a href="index.html">SECTORS</a></li>
         <li><a href="index.html">CAREERS</a></li>
+        <li><a href="index.html">GALLERY</a></li>
         <li><a href="index.html">CONTACT</a></li>
       </ul>
+      <hr>
     </div>
   </div>
 </nav>
 <hr>
-<!-- <div class="jumbotron text-center">
-  <h1>Company</h1> 
-  <p>We specialize in blablabla</p> 
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
-</div> -->
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-    <h2>Who we are</h2><br>
-    <h3><strong>● About Us</strong></h3>
-    <h4>Team MBRK comprises of dedicated professionals possessing expertise across a range of business needs. Our all-encompassing team comprises of Chartered Accountants and Company Secretaries Professionals, Semi qualified and Graduates. Additionally, we have associated various IT experts, Certified Financial Analysts, Advocates and Masters in Business Administration. </h4>
-    <h4>Team MBRK consists of people, who are technically competent, well trained, strongly motivated and have in-depth knowledge and rich experience.</h4>
-    <h4>We abide by strong ethics, thereby adding value to our client business.</h4>
-    <h4>Our business headquarters is in Mumbai and branch in Surat. We ensure the delivery of quality services to maintain elevated professional and ethical caliber.</h4> 
+    <h3><strong><u>Who we are</u></strong></h3>
+    <h2><strong></strong>About Us</h2>
+    <h4>● Team MBRK comprises of dedicated professionals possessing expertise across a range of business needs. Our all-encompassing team comprises of Chartered Accountants, Company Secretaries, Semi qualified and Graduates. Additionally, we have associated various IT experts, Certified Financial Analysts, Advocates and Masters in Business Administration. </h4>
+    <h4>● Team MBRK consists of people, who are technically competent, well trained, strongly motivated with in-depth knowledge and rich experience.</h4>
+    <h4>● We abide by strong ethics, thereby adding value to our client business.</h4>
+    <h4>● Our business headquarters is in Mumbai and branch in Surat. We ensure the delivery of quality services to maintain elevated professional and ethical caliber.</h4> 
     <br>
-    <h3><strong>● Our Strengths</strong></h3>
-    <ul style="list-style-type:none;">
-        <li>Adaptability to challenging situations.</li>
-        <li>Efficient relationships & negotiation skills.</li>
-        <li>High awareness of complexities of Indian laws.</li>
-        <li>Skills sets and understanding spread across varied sectors.</li>
-        <li>Proactive & interactive organization.</li>
+    <h2>Our Strengths</h2>
+    <ul style="list-style-type:none; color: black;">
+        <li>● Adaptability in challenging situations</li>
+        <li>● Efficient relationships</li>
+        <li>● High awareness of complexities in Indian laws</li>
+        <li>● Skills sets and understanding spread across varied sectors</li>
+        <li>● Proactive & interactive organization.</li>
       </ul>
+    
+      <h2>Advantages</h2>
+      <ul style="list-style-type:none;color: black; text-align: justify;">
+        <li>● Each assignment is carried out with utmost care and with active leadership and supervision at the partner level to provide challenging end-solution</li>
+        <li>●	To serve the deliverables, understanding of business complexities and needs of the client are the starting focus points, from where each assignment is delivered with the best-suited methodology for the desired output and practical solutions</li>
+        <li>●	This is supported with continuous learning and training to the team of dedicated and hardworking people from the domain</li>
+      </ul>
+
+      <h2>Our Approach & Process</h2>
+      <ul style="list-style-type:none;color: black;">
+        <li><strong>●<u> Service and Client Satisfaction</u> -</strong></li>
+        <div style="text-align: justify;">
+          <p>Quality services and timely delivery has been the key to our success. The dedicated and hard-working team at MBRK makes all efforts to upgrade the quality standards consistently. Continuous education and up-gradation are practiced religiously. Each assignment is dealt with utmost care under the direct supervision of the partner concerned. The theory of right man at the right work, put in practice, results into the desired level of satisfaction.</p>
+        </div>
+        <li><strong>●<u> Understanding Client’s Business and Requirements</u> -</strong></li>
+        <div style="text-align: justify;">
+          <p>In modern complex business environment, providing solutions is a challenge. We always focus thoughtfully on the complexities of the client’s business and understand the needs & requirements of the users. This facilitates us to meet the challenges and enables us to provide solutions in the best suited and cost-effective manner.</p>
+        </div>
+        <li><strong>●<u> Management of Change</u> -</strong></li>
+        <div style="text-align: justify;">
+          <p>In a dynamic business environment, change is inevitable. Internal and external factors influence situations to undergo change. Management of change requires utmost degree of planning and safeguards. We, at MBRK, have developed skill sets to quickly adapt the change and re-strategies the action and end results.</p>
+        </div>
+        </ul>
       </div>
       </div>
 </div>
@@ -284,24 +310,24 @@
 <div class="row">
   <div class="col-sm-5">
       <h5><u>HEAD OFFICE</u></h5>
-    <p><span class="glyphicon glyphicon-map-marker"></span>
+    <p style="font-size: 12px;"><span class="glyphicon glyphicon-map-marker"></span>
       OFFICE NO. 405, SKYLINE EPITOME,<br>
       NEAR VIDYAVIHAR RAILWAY STATION,<br>
-      &nbsp3 KMS FROM BANDRA KURLA COMPLEX,<br> 
       &nbspVIDYAVIHAR (W), MUMBAI-400086<br>
 
 </p>
-    <p><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
-    <p><span class="glyphicon glyphicon-envelope"></span> mbrk.co@gmail.com</p>
+    <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+    <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.co@gmail.com</p>
   </div>
   <div class="col-sm-5">
       <h5><u>BRANCH OFFICE</u></h5>
-      <p>
+      <p style="font-size: 12px;">
           <span class="glyphicon glyphicon-map-marker"></span>
           OFFICE NO.116, KRUSHI BAZAR,<br>
           NEAR SAHARA DARWAJA,<br>
           SURAT- 395002.
-          <p><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+          <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+          <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.surat@gmail.com</p>
       </p>
 
     </div>
