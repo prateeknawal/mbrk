@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="index.html">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   body {
@@ -40,11 +41,20 @@
     color: black;
 }
   h5{
+    font-size: 30px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  h6{
     font-size: 24px;
     text-transform: uppercase;
     color:white;
     font-weight: 600;
-    margin-bottom: 5px;
+    
+    text-align: center;
   }
   hr {
     margin-top: 50px;
@@ -59,13 +69,14 @@
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 5px 20px;
-    margin-top: -5px;
+    padding: 1px 20px;
+    margin-top: 9px;
   }
   .container-fluid-b {
-    padding: 60px 50px;
+    padding: 20px;
     background-color:#221f1f;
     color: white;
+    font-size: 20px;
   }
   .bg-grey {
     background-color: #f6f6f6;
@@ -151,9 +162,9 @@
     background-color: white;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
+    font-size: 13px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
   }
@@ -168,7 +179,7 @@
   .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
-    background-color: white !important;
+    background-color: grey !important;
 
   }
   footer .glyphicon {
@@ -190,7 +201,16 @@
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
-  @media (min-width: 768px) {
+  .nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
+
+.nav-tabs {
+    text-align:right;
+}
+@media (min-width: 768px) {
 .col-sm-5 {
     width: 48.66666667%;
   }
@@ -234,7 +254,7 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -242,16 +262,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" style="font-size: 30px; padding-top: 0px;" href="index.html"><img src="logo_mbrk.jpg" height="50px" width="230px"></a>
+      <a class="navbar-brand" style="font-size: 30px; padding-top: 0px;margin-top: -7px;" href="index.html"><img src="logo_mbrk.jpg" height="50px" width="260px" margin-top: -7px;></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">WHO WE ARE</a></li>
-        <li><a href="index.html">WHAT WE DO</a></li>
-        <li><a href="index.html">SECTORS</a></li>
-        <li><a href="index.html">CAREERS</a></li>
-        <li><a href="index.html">GALLERY</a></li>
-        <li><a href="index.html">CONTACT</a></li>
+        <li><a style="font-size:13px" href="index.html">WHO WE ARE</a></li>
+        <li><a style="font-size:13px" href="index.html">WHAT WE DO</a></li>
+        <li><a style="font-size:13px" href="index.html">SECTORS</a></li>
+        <li><a style="font-size:13px" href="index.html">CAREERS</a></li>
+        <li><a style="font-size:13px" href="index.html">GALLERY</a></li>
+        <li><a style="font-size:13px" href="index.html">CONTACT</a></li>
       </ul>
       <hr>
     </div>
@@ -263,25 +283,19 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-    <h3><strong><u>Who we are</u></strong></h3>
-    <h2><strong></strong>About Us</h2>
-    <h4>● Team MBRK comprises of dedicated professionals possessing expertise across a range of business needs. Our all-encompassing team comprises of Chartered Accountants, Company Secretaries, Semi qualified and Graduates. Additionally, we have associated various IT experts, Certified Financial Analysts, Advocates and Masters in Business Administration. </h4>
-    <h4>● Team MBRK consists of people, who are technically competent, well trained, strongly motivated with in-depth knowledge and rich experience.</h4>
-    <h4>● We abide by strong ethics, thereby adding value to our client business.</h4>
-    <h4>● Our business headquarters is in Mumbai and branch in Surat. We ensure the delivery of quality services to maintain elevated professional and ethical caliber.</h4> 
-    <br>
+    <h3><strong><u>WHO WE ARE</u></strong></h3>
     <h2>Our Strengths</h2>
     <ul style="list-style-type:none; color: black;">
-        <li>● Adaptability in challenging situations</li>
+        <li>● Adaptability in challenging and dynamic situations</li>
         <li>● Efficient relationships</li>
-        <li>● High awareness of complexities in Indian laws</li>
-        <li>● Skills sets and understanding spread across varied sectors</li>
+        <li>● High awareness of complexities and intricacies in Indian laws</li>
+        <li>● Skill sets and understanding spread across varied sectors</li>
         <li>● Proactive & interactive organization.</li>
       </ul>
     
-      <h2>Advantages</h2>
+      <h2>Our Advantages</h2>
       <ul style="list-style-type:none;color: black; text-align: justify;">
-        <li>● Each assignment is carried out with utmost care and with active leadership and supervision at the partner level to provide challenging end-solution</li>
+        <li>● Each assignment is carried out with utmost care and with active leadership and supervision at the partner level to provide challenging end-solutions</li>
         <li>●	To serve the deliverables, understanding of business complexities and needs of the client are the starting focus points, from where each assignment is delivered with the best-suited methodology for the desired output and practical solutions</li>
         <li>●	This is supported with continuous learning and training to the team of dedicated and hardworking people from the domain</li>
       </ul>
@@ -290,15 +304,15 @@
       <ul style="list-style-type:none;color: black;">
         <li><strong>●<u> Service and Client Satisfaction</u> -</strong></li>
         <div style="text-align: justify;">
-          <p>Quality services and timely delivery has been the key to our success. The dedicated and hard-working team at MBRK makes all efforts to upgrade the quality standards consistently. Continuous education and up-gradation are practiced religiously. Each assignment is dealt with utmost care under the direct supervision of the partner concerned. The theory of right man at the right work, put in practice, results into the desired level of satisfaction.</p>
+          <p>Quality services and timely delivery has been the key to our success. The dedicated and hard-working team at MBRK makes all efforts to upgrade the quality standards consistently. Continuous education and up-gradation are practised religiously. Each assignment is dealt with utmost care under the direct supervision of the partner concerned. The theory of right man at the right work, put in practice, results into the desired level of satisfaction.</p>
         </div>
-        <li><strong>●<u> Understanding Client’s Business and Requirements</u> -</strong></li>
+        <li><strong>●<u> Understanding the Client’s Business and Requirements</u> -</strong></li>
         <div style="text-align: justify;">
-          <p>In modern complex business environment, providing solutions is a challenge. We always focus thoughtfully on the complexities of the client’s business and understand the needs & requirements of the users. This facilitates us to meet the challenges and enables us to provide solutions in the best suited and cost-effective manner.</p>
+          <p>In the modern complex business environment, providing solutions is a challenge. We always focus thoughtfully on the complexities of the client’s business and understand the needs & requirements of the users. This facilitates us to meet the challenges and enables us to provide solutions in the best suited and cost-effective manner.</p>
         </div>
         <li><strong>●<u> Management of Change</u> -</strong></li>
         <div style="text-align: justify;">
-          <p>In a dynamic business environment, change is inevitable. Internal and external factors influence situations to undergo change. Management of change requires utmost degree of planning and safeguards. We, at MBRK, have developed skill sets to quickly adapt the change and re-strategies the action and end results.</p>
+          <p>In a dynamic business environment, change is inevitable. Internal and external factors influence situations to undergo change. Management of change requires utmost degree of planning and safeguards. We, at MBRK, have developed skill sets to quickly adapt the change and re-strategies the our action and end results.</p>
         </div>
         </ul>
       </div>
@@ -306,28 +320,28 @@
 </div>
 
 <div id="contact" class="container-fluid-b text-center">
-  <h5 class="text-center">CONTACT</h5>
+  <h5>CONTACT</h5>
 <div class="row">
   <div class="col-sm-5">
-      <h5><u>HEAD OFFICE</u></h5>
-    <p style="font-size: 12px;"><span class="glyphicon glyphicon-map-marker"></span>
+      <h6><u>HEAD OFFICE</u></h6>
+    <p style="font-size: 15px;"><span class="glyphicon glyphicon-map-marker"></span>
       OFFICE NO. 405, SKYLINE EPITOME,<br>
       NEAR VIDYAVIHAR RAILWAY STATION,<br>
       &nbspVIDYAVIHAR (W), MUMBAI-400086<br>
 
 </p>
-    <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
-    <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.co@gmail.com</p>
+    <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+    <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.co@gmail.com</p>
   </div>
   <div class="col-sm-5">
-      <h5><u>BRANCH OFFICE</u></h5>
-      <p style="font-size: 12px;">
+      <h6><u>BRANCH OFFICE</u></h6>
+      <p style="font-size: 15px;">
           <span class="glyphicon glyphicon-map-marker"></span>
           OFFICE NO.116, KRUSHI BAZAR,<br>
           NEAR SAHARA DARWAJA,<br>
           SURAT- 395002.
-          <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
-          <p style="margin-bottom: 1px;font-size: 12px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.surat@gmail.com</p>
+          <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-phone"></span> +91 9403203536</p>
+          <p style="margin-bottom: 1px;font-size: 15px;"><span class="glyphicon glyphicon-envelope"></span> mbrk.surat@gmail.com</p>
       </p>
 
     </div>
@@ -338,6 +352,8 @@
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
+  <br>
+  <p style="font-size: 20px;">&copy; MBRK & CO.</p>
 </footer>
 
 <script>
